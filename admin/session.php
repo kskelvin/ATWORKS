@@ -1,5 +1,5 @@
 <?php
-include('include/db.php');
+include("include/db.php");
 session_start();
 
 $id=$_SESSION['id_admin'];
@@ -14,6 +14,7 @@ $stmt->execute(['id_admin' => $id]);
 $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
 $user=$row['username'];
+$pic=$row['pic'];
 
 
 

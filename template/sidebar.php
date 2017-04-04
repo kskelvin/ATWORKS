@@ -7,7 +7,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="profile/<?php echo $pic; ?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p> <?php echo $user; ?></p>
@@ -66,7 +66,7 @@
         </li>
         <li class="treeview">
           <a href="index.php?page=departemen">
-            <i class="fa fa-industry"></i>
+           <i class="fa fa-building-o"></i>
             <span>Departemen</span>
             <!-- SUPAYA ADA TANDA <
             <span class="pull-right-container">

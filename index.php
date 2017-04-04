@@ -1,5 +1,5 @@
 <?php
-include('admin/session.php'); 
+include("admin/session.php"); 
 
 if(!isset($_SESSION['login']) || $_SESSION['login']!=1)
 {
@@ -8,11 +8,12 @@ if(!isset($_SESSION['login']) || $_SESSION['login']!=1)
 
 if($_SESSION['role'] == 0)
 {
-  $role="Super Admin";
+  $role="Staff HRD";
 }
 else{
   $role="User";
 }
+require_once("admin/include/db.php");
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ else{
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin | Dashboard</title>
+  <title>atWorks</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -28,6 +29,7 @@ else{
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <!-- Ionicons -->
+  <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
@@ -53,21 +55,21 @@ else{
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-    <script>
-var url = window.location;
-  // for treeview
-$('ul.treeview-menu a').filter(function() {
-  return this.href == url;
-}).closest('.treeview').addClass('active');
+  <script>
+      var url = window.location;
+        // for treeview
+      $('ul.treeview-menu a').filter(function() {
+        return this.href == url;
+      }).closest('.treeview').addClass('active');
   </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-  <?php include_once('template/navbar.php'); ?>
+  <?php include_once("template/navbar.php"); ?>
   
-  <?php include_once('template/sidebar.php'); ?>
-  
+  <?php include_once("template/sidebar.php"); ?>
+  <!-- include_once memasukkan skrip program hanya 1 kali saja tidak berulang-ulang -->
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -86,11 +88,11 @@ $('ul.treeview-menu a').filter(function() {
   
   </div>
   
- <?php include_once('template/footer.php'); ?>
+ <?php include_once("template/footer.php"); ?>
 
 </div>
 <!-- ./wrapper -->
-
+<script src="bootstrap/jquery.min.js"></script>
 <!-- jQuery 2.2.3 -->
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
