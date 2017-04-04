@@ -29,7 +29,10 @@ img{max-width:100%;}
 /*end reset*/
 body{
 	font-family: 'Oxygen-Bold', sans-serif !important;
+<<<<<<< HEAD
 	/*background:#927057;*/
+=======
+>>>>>>> origin/master
 	background:#00C0EF;
 }
 /*-- main --*/
@@ -46,8 +49,13 @@ body{
 .main{
 	width: 30%;
     margin: 2em auto 0;
+<<<<<<< HEAD
  	padding: 2em 4em 5em;
  	background: #ECF0F5;
+=======
+    padding: 2em 4em 5em;
+    background: #ECF0F5;
+>>>>>>> origin/master
 	position:relative;
 }
 .main:before{
@@ -78,8 +86,12 @@ body{
     margin: 0 auto;
     border: 5px solid #ECF0F5;
     border-radius: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
+
 .input_form input[type="text"],.input_form input[type="password"]{
 	outline: none;
     border: none;

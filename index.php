@@ -55,13 +55,21 @@ require_once("admin/include/db.php");
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+<<<<<<< HEAD
   <script>
+=======
+    <script>
+>>>>>>> origin/master
       var url = window.location;
         // for treeview
       $('ul.treeview-menu a').filter(function() {
         return this.href == url;
       }).closest('.treeview').addClass('active');
+<<<<<<< HEAD
   </script>
+=======
+    </script>
+>>>>>>> origin/master
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">

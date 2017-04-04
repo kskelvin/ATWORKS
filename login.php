@@ -32,14 +32,25 @@ require_once("admin/include/db.php");
 				</div>
 				<div class="input_form">
 					<form method="post" action="admin/login_proses.php">
+<<<<<<< HEAD
 						<input type="text"  name="user" title="username" required="" placeholder="Input Username" />
 						<input type="password" name="pass" title="password" required="" placeholder="Input Password" />
+=======
+						<!-- <input type="text" value="Name" name="user" title="username" placeholder="Input Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="" />
+						<input type="password" value="Password" name="pass" title="password" placeholder="Input Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="" /> -->
+						<input type="text" name="user" title="username" placeholder="Input Username" required="" />
+						<input type="password" name="pass" title="password" placeholder="Input Password" required="" />
+>>>>>>> origin/master
 						<input type="submit" value="Login" name="submit" />
 					</form>
 				</div>
 			</div>
 			<div class="footer">
+<<<<<<< HEAD
 				<p>&copy 2017  atWorks Profile Widget. All rights reserved | Design by <a href="#">atWorks.</a></p>
+=======
+				<p>&copy 2017 atWorks Profile Widget. All rights reserved | Design by <a href="#">atWorks.</a></p>
+>>>>>>> origin/master
 			</div>
 		</div>
 	<!-- //main -->

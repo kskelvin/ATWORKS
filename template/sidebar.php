@@ -66,7 +66,11 @@
         </li>
         <li class="treeview">
           <a href="index.php?page=departemen">
+<<<<<<< HEAD
            <i class="fa fa-building-o"></i>
+=======
+            <i class="fa fa-building-o"></i>
+>>>>>>> origin/master
             <span>Departemen</span>
             <!-- SUPAYA ADA TANDA <
             <span class="pull-right-container">
